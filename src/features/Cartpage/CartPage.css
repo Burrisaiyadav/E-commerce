@@ -1,0 +1,341 @@
+/* --- BASE & FONT STYLES --- */
+body {
+    margin: 0;
+    background-color: #f5f5f6;
+    font-family: "Assistant", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #282c3f;
+  }
+  
+  /* --- LAYOUT CONTAINER --- */
+  .checkout-page-container {
+    max-width: 1024px;
+    margin: 24px auto;
+  }
+  
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .page-main {
+    display: grid;
+    grid-template-columns: 55fr 45fr; /* Proportional columns */
+    gap: 24px;
+    align-items: start;
+  }
+  
+  .left-section, .right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  /* --- SHARED STYLES --- */
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #eaeaec;
+    border-radius: 4px;
+    padding: 16px 24px;
+  }
+  .outline-button {
+    background-color: #fff;
+    border: 1px solid #ff3f6c;
+    color: #ff3f6c;
+    padding: 10px 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .primary-button {
+    background-color: #ff3f6c;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 16px;
+  }
+  .know-more-link, .apply-coupon-link, .show-more-link {
+    color: #ff3f6c;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .know-more-link.small {
+    font-size: 12px;
+  }
+  
+  /* --- HEADER / STEPPER --- */
+  .stepper {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .stepper span {
+    padding-bottom: 5px;
+    color: #696e79;
+  }
+  .stepper span.active {
+    color: #20bd99;
+    border-bottom: 2px solid #20bd99;
+  }
+  .stepper-divider {
+    width: 30px;
+    height: 1px;
+    border-top: 1px dashed #696e79;
+    margin: 0 10px;
+  }
+  .secure-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    color: #535766;
+  }
+  .secure-badge img {
+    width: 25px;
+    height: 28px;
+  }
+  
+  /* --- LEFT COLUMN --- */
+  .address-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .address-info p {
+    font-size: 14px;
+    color: #535766;
+    margin: 4px 0 0 0;
+  }
+  
+  .offers-box .icon {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+  .offers-box ul {
+    font-size: 14px;
+    color: #535766;
+    padding-left: 20px;
+    margin: 10px 0;
+  }
+  
+  .warning-box {
+    border: 1px solid #eaeaec;
+    padding: 12px 16px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    color: #e8a254;
+  }
+  .view-button {
+    border: 1px solid #535766;
+    background: #fff;
+    color: #535766;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .items-summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+  }
+  .action-link {
+    background: none;
+    border: none;
+    font-weight: 700;
+    color: #535766;
+    cursor: pointer;
+    margin-left: 16px;
+  }
+  
+  .item-card-container {
+    position: relative;
+  }
+  .item-remove-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #535766;
+  }
+  .item-card {
+    display: flex;
+    gap: 16px;
+  }
+  .item-image-container img {
+    width: 110px;
+    height: 130px;
+    object-fit: cover;
+  }
+  .item-details-container {
+    font-size: 14px;
+  }
+  .item-details-container > p { margin: 0 0 8px 0; }
+  .item-brand { font-weight: 700; font-size: 16px; }
+  .item-title { color: #535766; }
+  .size-selector { margin-bottom: 8px; }
+  .size-warning {
+    background-color: #fff1e5;
+    color: #d5a26a;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: 8px;
+  }
+  .item-price-details {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin: 10px 0;
+  }
+  .final-price { font-size: 16px; }
+  .original-price { color: #7e818c; text-decoration: line-through; }
+  .discount-percentage { color: #ff905a; font-weight: 700; }
+  .return-policy { font-size: 13px; color: #535766; }
+  
+  .add-from-wishlist {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 16px 24px;
+  }
+  
+  /* --- RIGHT COLUMN --- */
+  .card-heading {
+    margin: 0 0 16px 0;
+    font-size: 13px;
+    font-weight: 700;
+    color: #535766;
+  }
+  .card-heading-bold {
+    margin: 0 0 16px 0;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .coupon-apply-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .donation-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .donation-box label { font-weight: 700; font-size: 14px; }
+  .donation-buttons { display: flex; gap: 8px; margin-bottom: 8px; }
+  .donation-buttons button {
+    border: 1px solid #d4d5d9;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .price-details-card hr {
+    border: none;
+    border-top: 1px solid #eaeaec;
+    margin: 16px 0;
+  }
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .green-text { color: #20bd99; font-weight: 700; }
+  .total-amount-row { font-size: 16px; }
+  /* --- Add these styles to your existing CheckoutPage.css --- */
+
+/* Address Edit Form */
+.address-edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .address-edit-form h4 {
+    margin: 0;
+  }
+  .address-edit-form input, .address-edit-form textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #d4d5d9;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+  }
+  .address-edit-form div {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Coupon Input and Messages */
+  .coupon-apply-box {
+    display: flex;
+    gap: 8px;
+  }
+  .coupon-apply-box input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #d4d5d9;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .coupon-applied-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #20bd99; /* Green color for success */
+  }
+  .coupon-error {
+    color: #ff3f6c; /* Red color for error */
+    font-size: 12px;
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+  
+  /* Donation Button Selection */
+  .donation-buttons button.selected {
+    border-color: #ff3f6c;
+    color: #ff3f6c;
+  }
+  
+  /* Move to Wishlist button inside item card */
+  .move-to-wishlist {
+    margin-left: 0;
+    margin-top: 10px;
+    padding: 0;
+    color: #535766;
+  }
+  
+  .with-link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  /* Make sure this is in your CSS for price rows */
+  .price-row > span:last-child {
+    text-align: right;
+  }

@@ -1,0 +1,260 @@
+/* --- Checkout (Bag) Page Enhancements --- */
+.cart-page {
+  background: #f5f5f6;
+  min-height: calc(100vh - 80px);
+}
+
+.cart-container {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 0 16px;
+  background: transparent;
+  box-shadow: none;
+}
+
+.cart-container {
+  display: flex;
+  gap: 24px;
+}
+
+.cart-left {
+  flex: 1 1 65%;
+}
+
+.cart-right {
+  flex: 1 1 35%;
+}
+
+/* Address Box */
+.address-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #fff;
+  border: 1px solid #eaeaec;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.change-address-btn {
+  background: #fff;
+  border: 1px solid #d4d5d9;
+  color: #3e4152;
+  border-radius: 4px;
+  height: 36px;
+  padding: 0 12px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* Offers */
+.offers-box {
+  background: #fff;
+  border: 1px solid #eaeaec;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.offers-box p {
+  margin: 0 0 8px 0;
+  color: #282c3f;
+}
+
+.show-more {
+  color: #ff3f6c;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Items Header */
+.cart-items-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #eaeaec;
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+}
+
+.remove-btn,
+.wishlist-btn {
+  background: #fff;
+  border: 1px solid #d4d5d9;
+  color: #3e4152;
+  border-radius: 4px;
+  height: 32px;
+  padding: 0 10px;
+  cursor: pointer;
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+/* Cart Item Row */
+.cart-item {
+  display: flex;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid #eaeaec;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.item-image {
+  width: 88px;
+  height: 112px;
+  border-radius: 4px;
+  object-fit: cover;
+  flex: 0 0 auto;
+}
+
+.item-details {
+  flex: 1 1 auto;
+}
+
+.item-brand {
+  margin: 0 0 4px 0;
+  font-weight: 700;
+  color: #282c3f;
+}
+
+.item-title {
+  margin: 0 0 6px 0;
+  color: #535766;
+  font-size: 14px;
+}
+
+.item-seller {
+  margin: 0 0 8px 0;
+  color: #94969f;
+  font-size: 12px;
+}
+
+.item-size-qty {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #535766;
+}
+
+.quantity-selector select {
+  height: 32px;
+  border: 1px solid #d4d5d9;
+  border-radius: 4px;
+  padding: 0 8px;
+  background: #fff;
+}
+
+.item-price {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.discounted-price {
+  color: #282c3f;
+  font-weight: 700;
+}
+
+.original-price {
+  color: #94969f;
+  text-decoration: line-through;
+  font-size: 12px;
+}
+
+.discount-percent {
+  color: #ff905a;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.delivery-info {
+  color: #535766;
+  font-size: 12px;
+}
+
+.item-remove-btn {
+  background: transparent;
+  border: none;
+  color: #282c3f;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 8px;
+  align-self: flex-start;
+}
+
+/* Right column: Price details */
+.price-details {
+  position: sticky;
+  top: 96px;
+  background: #fff;
+  border: 1px solid #eaeaec;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.price-details h4 {
+  margin: 0 0 12px 0;
+  color: #535766;
+  font-size: 14px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  color: #282c3f;
+  font-size: 14px;
+}
+
+.discount-amount {
+  color: #03a685;
+  font-weight: 700;
+}
+
+.free-fee {
+  color: #03a685;
+  font-weight: 700;
+}
+
+.total-row {
+  font-weight: 700;
+}
+
+.apply-coupon-btn {
+  background: #fff;
+  border: 1px solid #d4d5d9;
+  color: #3e4152;
+  border-radius: 4px;
+  height: 32px;
+  padding: 0 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.place-order-btn {
+  width: 100%;
+  background: #ff3f6c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  height: 40px;
+  margin-top: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .cart-container {
+    flex-direction: column;
+  }
+  .price-details {
+    position: static;
+  }
+}
+
